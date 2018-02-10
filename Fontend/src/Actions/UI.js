@@ -1,6 +1,4 @@
-export const setButtonShowing = (buttonShowing) => {
-  return {
-    type: 'SET_BUTTON_SHOWING',
-    buttonShowing
-  }
-}
+export const setButtonShowing = (buttonShowing) => ({
+  type: 'SET_BUTTON_SHOWING',
+  buttonShowing
+});

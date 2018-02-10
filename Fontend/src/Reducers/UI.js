@@ -1,20 +1,20 @@
 const initialState = {
   buttonShowing: true
-}
+};
 
-function UIReducer(state, action) {
+const UIReducer = (state, action) => {
   if (typeof state === 'undefined') {
     return initialState;
   }
 
-  switch(action.type){
+  switch (action.type) {
     case 'SET_BUTTON_SHOWING':
-      return  {
+      return {
         buttonShowing: action.buttonShowing
       };
-      default:
+    default:
       return state;
   }
-}
+};
 
 export default UIReducer;
